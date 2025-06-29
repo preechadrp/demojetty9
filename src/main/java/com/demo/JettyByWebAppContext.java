@@ -40,9 +40,7 @@ public class JettyByWebAppContext {
 		System.out.println("webResource : " + webResource.toString());
 		//รันด้วย .jar = jar:file:/E:/javaDemo1/demojetty9/target/demojetty9-0.0.1-SNAPSHOT.jar!/webapp/
 		//รันด้วย IDE = file:/E:/javaDemo1/demojetty9/target/classes/webapp/
-		if (webResource != null) {
-			webapp.setWarResource(Resource.newResource(webResource));
-		}
+		webapp.setWarResource(Resource.newResource(webResource));
 	 
 		// เพิ่ม servlet
 		webapp.addServlet(BlockingServlet.class, "/api/status");// link : http://localhost:8090/api/status
