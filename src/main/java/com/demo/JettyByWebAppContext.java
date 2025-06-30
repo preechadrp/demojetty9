@@ -27,9 +27,11 @@ public class JettyByWebAppContext {
 		var threadPool = new QueuedThreadPool(maxThreads, minThreads, idleTimeout);
 
 		Server server = new Server(threadPool);
+
+		// ==== add connector
 		var connector = new ServerConnector(server);
 		connector.setPort(appPort);
-		server.setConnectors(new Connector[] { connector });
+		server.addConnector(connector);
 
 		// ==== แบบใช้ WebAppContext ต้องเพิ่ม lib = jetty-webapp
 		var webapp = new WebAppContext();
