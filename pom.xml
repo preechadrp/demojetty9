@@ -8,8 +8,8 @@
   
   <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <jetty.version>9.4.51.v20230217</jetty.version>
         <zk.version>9.5.0.3</zk.version>
    </properties>
